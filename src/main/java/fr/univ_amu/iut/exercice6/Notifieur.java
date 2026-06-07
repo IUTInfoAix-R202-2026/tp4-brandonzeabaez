@@ -7,6 +7,5 @@ package fr.univ_amu.iut.exercice6;
  * injecter grâce à une annotation {@code @Named} (voir {@link Exercice6Module}).
  */
 public interface Notifieur {
-
   void notifier(String message);
 }
