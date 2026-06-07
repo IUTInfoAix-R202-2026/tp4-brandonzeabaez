@@ -1,6 +1,8 @@
 package fr.univ_amu.iut.exercice6;
 
+// import java.util.jar.Attributes.Name;
 import com.google.inject.AbstractModule;
+import com.google.inject.name.Names;
 
 /**
  * Module Guice de l'exercice 6.
@@ -22,5 +24,8 @@ public class Exercice6Module extends AbstractModule {
     // - le nom "silencieux" -> NotifieurSilencieux
     // Astuce :
     // bind(Notifieur.class).annotatedWith(Names.named("console")).to(NotifieurConsole.class);
+    // bind(Notifieur.class).annotatedWith(Names.named("silencieux")).to(NotifieurSilencieux.class);
+    bind(Notifieur.class).annotatedWith(Names.named("console")).to(NotifieurConsole.class);
+    bind(Notifieur.class).annotatedWith(Names.named("silencieux")).to(NotifieurSilencieux.class);
   }
 }
