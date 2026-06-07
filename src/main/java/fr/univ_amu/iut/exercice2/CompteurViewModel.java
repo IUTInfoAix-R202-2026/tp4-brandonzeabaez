@@ -32,7 +32,7 @@ public class CompteurViewModel {
     // `message` doit afficher "Compteur à N" où N est la valeur courante,
     // et se mettre à jour tout seul quand le compteur change.
     // Astuce : Bindings.concat("Compteur à ", compteur.valeurProperty()).
-    message.bind(Bindings.concat("Compteur à ", compteur.getValeur()));
+    message.bind(Bindings.concat("Compteur à ", compteur.valeurProperty()));
   }
 
   public StringProperty messageProperty() {
